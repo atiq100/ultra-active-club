@@ -1,0 +1,44 @@
+[
+    {
+      "id": "63348b2952538771269172b1",
+      "details": "This activity helps you practise grammar",
+      "image": "https://images.unsplash.com/photo-1539632346654-dd4c3cffad8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JhbW1hcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "time": 8,
+      "activity_name": "Grammar"
+    },
+    {
+      "id": "63348b29afbf4c8f6e00b427",
+      "details": "Listen to descriptions of people and choose the right picture",
+      "image": "https://images.unsplash.com/photo-1610484826967-09c5720778c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGVhcm5pbmclMjBlbmdsaXNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "time": 10,
+      "activity_name": "Listening"
+    },
+    {
+      "id": "63348b29d0dabf7c0d4c205a",
+      "details": "Learn how to pronounce some different vowel sounds",
+      "image": "https://images.unsplash.com/photo-1518457900604-5c973dffdedf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGxlYXJuaW5nJTIwZW5nbGlzaHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "time": 6,
+      "activity_name": "Pronunciation"
+    },
+    {
+      "id": "63348b2922d48551a67cfb19",
+      "details": "Read about a camping trip and answer some questions",
+      "image": "https://images.unsplash.com/photo-1553729784-e91953dec042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmVhZGluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "time": 10,
+      "activity_name": "Reading"
+    },
+    {
+      "id": "63348b2970f03f3fdad56d7f",
+      "details": "Learn about different exclamations and more about pronouncing ",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGVhcm5pbmclMjBlbmdsaXNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "time": 5,
+      "activity_name": "Speaking"
+    },
+    {
+      "id": "63348b2903805846f3760941",
+      "details": "Practise linking ideas in an essay about public transport",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JhbW1hcnxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "time": 10,
+      "activity_name": "Writing"
+    }
+  ]

@@ -1,8 +1,16 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import logo from '../../images/logo.png'
 import Activities from '../Activities/Activities';
 import './Home.css'
 const Home = () => {
+    const [activities,setActivities] = useState([]);
+    const [cart,setCart] = useState([]);
+    useEffect(()=>{
+        fetch('activities.json')
+        .then(res=>res.json())
+        .then(data=>setActivities(data))
+    },[]);
     return (
         <div>
             <div className="home-container">
@@ -13,7 +21,7 @@ const Home = () => {
                     </div>
                     <h3 className='learning-text'>Select Todays Learning</h3>
                     <div className="activity-container">
-                        <Activities></Activities>
+                        <Activities activities={activities} cart={cart} setCart={setCart}></Activities>
                     </div>
                 </div>
                 <div className="right-side">
