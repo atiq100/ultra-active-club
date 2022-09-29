@@ -1,20 +1,52 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import image from '../../images/avatar.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
 
 const Cart = (props) => {
+    const [time, settime] = useState(0)
+    const [time2, settime2] = useState("")
+    const [time3, settime3] = useState("")
+    const [time4, settime4] = useState("")
+    const [time5, settime5] = useState("")
     const{cart}=props
-    console.log(cart);
+
      let totalTime = 0;
    
-    // //let quantity = 0;
+   
      for(const learning of cart){
-    //     //quantity = quantity + product.quantity;
+    
         totalTime=totalTime + learning.time;
-    //     //shipping = shipping + product.shipping
+    
      } 
+     const handleBreak =() =>{
+        // const {btn1,btn2,btn3,btn4,btn5}=p
+        // const breakTime = {
+        //     btn1:10,
+        //     btn2:20,
+        //     btn3:30,
+        //     btn4:40,
+        //     btn5:50,
+        // }
+        
+       // const newBreak=[breakTime]
+        //let btn=(newBreak[0].btn1);
+        settime(10)
+    }
+    const handleBreak2 =() =>{
+        settime(20)
+    }
+    const handleBreak3 =() =>{
+        settime(30)
+    }
+    const handleBreak4 =() =>{
+        settime(40)
+    }
+    const handleBreak5 =() =>{
+        settime(50)
+    }
 
     const handleToast =()=>{
        
@@ -46,11 +78,11 @@ const Cart = (props) => {
             <div className="break">
                 <h3>Add A Break</h3>
                 <div className="break-btn">
-                    <button className='btn'>10 min</button>
-                    <button className='btn'>20 min</button>
-                    <button className='btn'>30 min</button>
-                    <button className='btn'>40 min</button>
-                    <button className='btn'>50 min</button>
+                    <button onClick={handleBreak} className='btn'>10 min</button>
+                    <button onClick={handleBreak2} className='btn'>20 min</button>
+                    <button onClick={handleBreak3} className='btn'>30 min</button>
+                    <button onClick={handleBreak4} className='btn'>40 min</button>
+                    <button onClick={handleBreak5} className='btn'>50 min</button>
                 </div>
             </div>
             <div className="">
@@ -63,7 +95,11 @@ const Cart = (props) => {
             <div className=""><br></br>
                 <div className="break-btn">
                     <h4>Break Time</h4>
-                    <p>200 min</p>
+                   
+                       
+                        <p>{time} {time2}</p>
+                    
+                   
                 </div><br></br>
                 <button className='card-btn'onClick={handleToast}>Activity completed</button>
                 <ToastContainer />

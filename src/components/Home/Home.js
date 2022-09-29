@@ -8,14 +8,14 @@ import './Home.css'
 const Home = () => {
     const [activities,setActivities] = useState([]);
     const [cart,setCart] = useState([]);
+    //
     useEffect(()=>{
         fetch('activities.json')
         .then(res=>res.json())
         .then(data=>setActivities(data))
     },[]);
     const handleCart = (activity) =>{
-        console.log(activity);
-       
+        
        const newCart = [...cart,activity]
        setCart(newCart)
        
@@ -36,6 +36,7 @@ const Home = () => {
                         activity={activity} 
                         key={activity?.id} 
                         handleCart ={handleCart}
+                       
                        >
 
                         </Activity>))

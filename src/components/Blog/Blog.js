@@ -11,14 +11,14 @@ Although React was conceived to be used in the browser, because of its design it
             </div>
             <div>
                 <h3>Deference between props and state?</h3>
-                <p>
+               
                     <ol>
                         <li>Props are used to pass data from one component to another.</li>
                         <li>The state is a local data storage that is local to the component only and cannot be passed to other components.</li>
                         <li>The this.setState property is used to update the state values in the component.</li>
                         <li>Props are read-only.State is both read and write.</li>
                     </ol>
-                </p>
+               
             </div>
             <div>
                 <h3>Usage of React Hook useEffect</h3>
