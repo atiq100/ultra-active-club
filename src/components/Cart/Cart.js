@@ -7,10 +7,10 @@ import './Cart.css'
 
 const Cart = (props) => {
     const [time, settime] = useState(0)
-    const [time2, settime2] = useState("")
-    const [time3, settime3] = useState("")
-    const [time4, settime4] = useState("")
-    const [time5, settime5] = useState("")
+    // const [time2, settime2] = useState("")
+    // const [time3, settime3] = useState("")
+    // const [time4, settime4] = useState("")
+    // const [time5, settime5] = useState("")
     const{cart}=props
 
      let totalTime = 0;
@@ -97,7 +97,7 @@ const Cart = (props) => {
                     <h4>Break Time</h4>
                    
                        
-                        <p>{time} {time2}</p>
+                        <p>{time} </p>
                     
                    
                 </div><br></br>
