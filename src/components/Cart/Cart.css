@@ -1,0 +1,31 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .location{
+    line-height: 5px;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 10px;
+    background-color: #F5F6F7;
+    margin-top: 22px;
+    border-radius: 8px;
+  }
