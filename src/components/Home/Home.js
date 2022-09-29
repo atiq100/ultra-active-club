@@ -2,6 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import logo from '../../images/logo.png'
 import Activity from '../Activity/Activity'
+import Blog from '../Blog/Blog';
 import Cart from '../Cart/Cart';
 import './Home.css'
 const Home = () => {
@@ -44,6 +45,9 @@ const Home = () => {
                 <div className="right-side">
                     <Cart cart={cart}></Cart>
                 </div>
+            </div>
+            <div className='blog'>
+                <Blog></Blog>
             </div>
         </div>
     );
