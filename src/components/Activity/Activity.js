@@ -1,6 +1,6 @@
 import React from 'react';
 import './Activity.css'
-const Activity = ({activity,cart,setCart}) => {
+const Activity = ({activity,handleCart}) => {
     const {image,details,time,activity_name}=activity;
     return (
         <div>
@@ -11,7 +11,7 @@ const Activity = ({activity,cart,setCart}) => {
             </p>
             <p>Time required: {time}s</p>
              
-             <button  className='card-btn'>Add to list</button>
+             <button onClick={() =>handleCart(activity)}  className='card-btn'>Add to list</button>
             </div>
         </div>
     );

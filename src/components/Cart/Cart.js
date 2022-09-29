@@ -5,10 +5,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
 
 const Cart = (props) => {
+    const{cart}=props
+    console.log(cart);
+     let totalTime = 0;
+   
+    // //let quantity = 0;
+     for(const learning of cart){
+    //     //quantity = quantity + product.quantity;
+        totalTime=totalTime + learning.time;
+    //     //shipping = shipping + product.shipping
+     } 
 
     const handleToast =()=>{
        
-        toast.success("Wow you completed todays task!");
+        toast.success("Wow you completed today tasks!");
     }
     return (
         <div className='cart'>
@@ -47,7 +57,7 @@ const Cart = (props) => {
                 <h3>Learning Details</h3>
                 <div className="break-btn">
                     <h4>Learning Time</h4>
-                    <p>200 min</p>
+                    <p>{totalTime} min</p>
                 </div>
             </div>
             <div className=""><br></br>
@@ -55,7 +65,7 @@ const Cart = (props) => {
                     <h4>Break Time</h4>
                     <p>200 min</p>
                 </div><br></br>
-                <button className='card-btn'onClick={()=>handleToast()}>Activity completed</button>
+                <button className='card-btn'onClick={handleToast}>Activity completed</button>
                 <ToastContainer />
             </div>
         </div>

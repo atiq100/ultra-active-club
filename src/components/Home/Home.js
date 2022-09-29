@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import logo from '../../images/logo.png'
-import Activities from '../Activities/Activities';
+import Activity from '../Activity/Activity'
 import Cart from '../Cart/Cart';
 import './Home.css'
 const Home = () => {
@@ -12,6 +12,14 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setActivities(data))
     },[]);
+    const handleCart = (activity) =>{
+        console.log(activity);
+       
+       const newCart = [...cart,activity]
+       setCart(newCart)
+       
+    }
+   
     return (
         <div>
             <div className="home-container">
@@ -22,11 +30,19 @@ const Home = () => {
                     </div>
                     <h3 className='learning-text'>Select Todays Learning</h3>
                     <div className="activity-container">
-                        <Activities activities={activities} cart={cart} setCart={setCart}></Activities>
+                    {
+                    activities.map((activity => <Activity 
+                        activity={activity} 
+                        key={activity?.id} 
+                        handleCart ={handleCart}
+                       >
+
+                        </Activity>))
+                }
                     </div>
                 </div>
                 <div className="right-side">
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div>

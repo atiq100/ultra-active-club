@@ -4,6 +4,10 @@
     margin-left: 100px;
     
 }
+.activity-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 .heading{
     margin-top: 80px;
 }
