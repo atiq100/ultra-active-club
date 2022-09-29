@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect } from 'react';
+import { useState,} from 'react';
 import image from '../../images/avatar.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,10 +7,7 @@ import './Cart.css'
 
 const Cart = (props) => {
     const [time, settime] = useState(0)
-    // const [time2, settime2] = useState("")
-    // const [time3, settime3] = useState("")
-    // const [time4, settime4] = useState("")
-    // const [time5, settime5] = useState("")
+   
     const{cart}=props
 
      let totalTime = 0;
