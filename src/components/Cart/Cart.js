@@ -1,8 +1,15 @@
 import React from 'react';
 import image from '../../images/avatar.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
 
 const Cart = (props) => {
+
+    const handleToast =()=>{
+       
+        toast.success("Wow you completed todays task!");
+    }
     return (
         <div className='cart'>
             <div className="profile">
@@ -48,7 +55,8 @@ const Cart = (props) => {
                     <h4>Break Time</h4>
                     <p>200 min</p>
                 </div><br></br>
-                <button className='card-btn'>Activity completed</button>
+                <button className='card-btn'onClick={()=>handleToast()}>Activity completed</button>
+                <ToastContainer />
             </div>
         </div>
     );

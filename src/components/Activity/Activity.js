@@ -4,7 +4,7 @@ const Activity = ({activity,cart,setCart}) => {
     const {image,details,time,activity_name}=activity;
     return (
         <div>
-            <div className="card">
+            <div className="card" data-aos="fade-zoom-in">
             <img src={image} alt="" className='activity-img'/>
             <h3>{activity_name}</h3>
             <p> {details}
