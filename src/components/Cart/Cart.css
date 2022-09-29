@@ -29,3 +29,20 @@
     margin-top: 22px;
     border-radius: 8px;
   }
+  .break-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5F6F7;
+    padding: 8px;
+    border-radius: 8px;
+
+  }
+  .btn{
+    padding: 20px 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }

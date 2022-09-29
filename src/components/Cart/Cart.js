@@ -26,6 +26,16 @@ const Cart = (props) => {
                     <p>Age</p>
                 </div>
             </div>
+            <div className="break">
+                <h3>Add A Break</h3>
+                <div className="break-btn">
+                    <button className='btn'>10 min</button>
+                    <button className='btn'>20 min</button>
+                    <button className='btn'>30 min</button>
+                    <button className='btn'>40 min</button>
+                    <button className='btn'>50 min</button>
+                </div>
+            </div>
         </div>
     );
 };
